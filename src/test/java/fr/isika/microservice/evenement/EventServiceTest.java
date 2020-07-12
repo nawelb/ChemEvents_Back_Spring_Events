@@ -32,16 +32,16 @@ public class EventServiceTest {
                 .expectBodyList(Event.class);
     }
 	
-	@Test
-    public void testGetEventById() {
-        webTestClient.get().uri(baseURI+"/event-api/public/event/{_id}", "10thWorldConferenceon")
-                .accept(MediaType.APPLICATION_JSON_UTF8)
-                .exchange()
-                .expectStatus().isOk()
-                .expectBody()
-                .consumeWith(response ->
-                        Assertions.assertThat(response.getResponseBody()).isNotNull());
-    }
+//	@Test
+//    public void testGetEventById() {
+//        webTestClient.get().uri(baseURI+"/event-api/public/event/{_id}", "10thWorldConferenceon")
+//                .accept(MediaType.APPLICATION_JSON_UTF8)
+//                .exchange()
+//                .expectStatus().isOk()
+//                .expectBody()
+//                .consumeWith(response ->
+//                        Assertions.assertThat(response.getResponseBody()).isNotNull());
+//    }
 	
 	
 }
