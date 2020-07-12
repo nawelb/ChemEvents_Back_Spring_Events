@@ -1,4 +1,4 @@
-# ChemEventz - Scraper
+# ChemEventz - Microservice Spring Event
 &nbsp;
 ## About ChemEventz!
 
