@@ -34,7 +34,7 @@ public class EventServiceTest {
 	
 	@Test
     public void testGetEventById() {
-        webTestClient.get().uri(baseURI+"/event-api/public/event", "10thWorldConferenceon")
+        webTestClient.get().uri(baseURI+"/event-api/public/event/{_id}", "10thWorldConferenceon")
                 .accept(MediaType.APPLICATION_JSON_UTF8)
                 .exchange()
                 .expectStatus().isOk()
