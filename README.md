@@ -1,4 +1,4 @@
-# ABCD ChemEventz - Microservice Spring Event
+# ChemEventz - Microservice Spring Event
 &nbsp;
 ## About ChemEventz!
 
@@ -12,27 +12,27 @@ How to make these meetings easier?
 
 
 ChemEventz is divided into 5 parts available in my Github account  [public repositories][Git]
-  - [ChemEventz - scraper][GitScrap]  
+  - [ChemEventz - Scraper][GitScrap]  
   - [ChemEventz - NodeJS - API][GitNodeJS] 
   - [ChemEventz - Spring Boot Microservice Authentication][GitSpringAuth]
   - [ChemEventz - Spring Boot Microservice Events][GitSpringEvents]
   - [ChemEventz - Angular][GitAngular]
 
   
-### Tech Dev 
+### Tech Dev
 
-Dillinger uses a number of open source projects to work properly:
+ChemEventz uses a number of open source projects to work properly:
 
 * [Angular] - HTML enhanced for web apps!
-* [node.js] - evented I/O for the backend
-* [Express] - fast node.js network app framework [@tjholowaychuk]
+* [node.js] - v12 for the backend
+* [Express] - fast node.js network app framework 
 * [Spring Boot] - focus on application-level business logic
-* [MongoDB]
-* [Mysql]
+* [MongoDB] - non-relationnal database for events storage
+* [MySQL] - relational dataBase for users data storage
 
 ### Tech Prod
 
-Different technologies used to deploy ChemEventz project:
+Technologies used to deploy ChemEvents project:
 
 * [Heroku] - Deploy Spring and NodeJS microservices
 * [AWS S3] - Deploy Angular microservice
@@ -45,10 +45,11 @@ ______________________________________
 # ChemEventz - Microservice Spring Event
 
 ### Tech Dev
-* [Spring Boot]: -kpoj 
+
+
 * [JAVA] - version 8 
-* [Devtools] - 
-* [Srping framework cloud] - 
+* [Spring Boot] - focus on application-level business logic
+* [Maven] - Manage project 
 
 
 
@@ -62,19 +63,21 @@ Create new folder
 $ git clone https://github.com/nawelb/ChemEvents_Back_Spring_Events
 $ cd ChemEvents_Back_Spring_Events
 ```
-Import the project in your IDE.
+Import the project in your favorite IDE :
 
 Then, add environnement variables :
  - PORT_EVENT : free port to allow this application to run
  - HOST_NAME : as url of your node API [cf node API]
  
-Import the project in your favorite IDE. In the root directory run :
+
 ```sh
 $ mvn clean install package
 ```
+
 Finally, run the project.
 
 ### URLs
+
 POST
 
 - /event-api/private/event
@@ -99,7 +102,8 @@ POST
 
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
 
-
+  [Maven]: <https://maven.apache.org/>
+  [Java]:<https://www.java.com/fr/download/>
   [Git]: <https://github.com/nawelb>
   [node.js]: <http://nodejs.org>
   [express]: <http://expressjs.com>
@@ -117,3 +121,4 @@ POST
   [AWS RDS]: <https://aws.amazon.com/fr/rds/>
   [Mongo Atlas]: <https://www.mongodb.com/cloud/atlas>
   [MongoDB]: <https://www.mongodb.com/fr>
+  [MySQL]: <https://www.mysql.com/fr/>
