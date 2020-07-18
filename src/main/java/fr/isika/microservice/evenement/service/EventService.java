@@ -123,7 +123,7 @@ public class EventService {
 	
 	
 
-//	@GetMapping("public/event")
+//	@GetMapping("public/event") version sans webClient
 //	public Flux<Event>getEventByCity(@RequestParam(value="city", required=false) String city){
 //		System.out.println("DANS CITY !!!!");
 //		return client.get().uri("/event-api/public/event?city="+city)
